@@ -1,0 +1,128 @@
+/* tokens.css — the "Aperture" brand system for Eyecare of Catoosa Hills.
+   Every colour, type, space, radius, shadow and motion value the site uses is declared HERE and
+   referenced by var() in site.css — change a value here, never at a call site.
+   [m] = measured on the live site (audit/design-baseline.json, audit/source-design/source-tokens.css,
+         the logo's own pixels); [d] = designed for this redesign. Contrast pairs: docs/BRAND-SYSTEM.md. */
+@font-face { font-family: "Atkinson Hyperlegible Next"; src: url("../fonts/atkinson-next.woff2") format("woff2"); font-weight: 200 800; font-style: normal; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Atkinson Hyperlegible Next"; src: url("../fonts/atkinson-next-italic.woff2") format("woff2"); font-weight: 200 800; font-style: italic; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Fraunces"; src: url("../fonts/fraunces.woff2") format("woff2"); font-weight: 400 600; font-style: normal; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Fraunces"; src: url("../fonts/fraunces-italic.woff2") format("woff2"); font-weight: 400 600; font-style: italic; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+:root {
+  /* ---- palette ------------------------------------------------------------------------ */
+  --ap-ink: #0b1a2e;          /* [d] deepest navy: hero, footer bar */
+  --ap-navy: #112744;         /* [m] the logo's ink, the live "Request Appointment Online" button */
+  --ap-navy-2: #1a3558;       /* [d] raised surface on navy */
+  --ap-navy-3: #24466f;       /* [d] lines on navy */
+  --ap-blue: #264e7f;         /* [m] the live doctor band — links */
+  --ap-teal: #0b6e6a;         /* [d] accent on light grounds (eyebrows, icons, focus) */
+  --ap-teal-2: #11918b;       /* [d] decorative strokes on light (never text) */
+  --ap-teal-bright: #5fd4c8;  /* [d] accent on navy */
+  --ap-amber: #f2b33d;        /* [d] the one call-to-action colour: sunlight through a lens */
+  --ap-amber-2: #e0a22c;      /* [d] amber, pressed / hover */
+  --ap-amber-soft: #fbecc9;   /* [d] amber tint (notes) */
+  --ap-paper: #f6f8fa;        /* [m→d] page ground (the live header ground #f5f7f9, cooled) */
+  --ap-white: #ffffff;
+  --ap-mist: #e8eff4;         /* [d] alternate ground */
+  --ap-mist-2: #dde7ee;       /* [d] pressed / hover on mist */
+  --ap-line: #d6e0e8;         /* [d] hairlines */
+  --ap-line-2: #c3d1dc;       /* [d] form borders (3:1 on white is not required for hairlines; inputs use --ap-field) */
+  --ap-field: #6d7f93;        /* [d] input borders: 4.0:1 on white */
+  --ap-text: #14213a;         /* [d] body text */
+  --ap-text-2: #4a5a70;       /* [d] secondary text */
+  --ap-on-dark: #eef4f8;      /* [d] text on navy */
+  --ap-on-dark-2: #aebfd0;    /* [d] secondary text on navy */
+
+  /* ---- roles (components read these) ------------------------------------------------------ */
+  --c-bg: var(--ap-paper);
+  --c-surface: var(--ap-white);
+  --c-surface-2: var(--ap-mist);
+  --c-surface-3: var(--ap-mist-2);
+  --c-text: var(--ap-text);
+  --c-text-2: var(--ap-text-2);
+  --c-heading: var(--ap-navy);
+  --c-link: var(--ap-blue);
+  --c-link-hover: var(--ap-navy);
+  --c-accent: var(--ap-teal);
+  --c-accent-line: var(--ap-teal-2);
+  --c-cta: var(--ap-amber);
+  --c-cta-hover: var(--ap-amber-2);
+  --c-cta-text: var(--ap-ink);
+  --c-focus: var(--ap-teal);
+  --c-line: var(--ap-line);
+  --c-line-2: var(--ap-line-2);
+  --c-field: var(--ap-field);
+  --c-dark: var(--ap-ink);
+  --c-dark-2: var(--ap-navy);
+  --c-dark-3: var(--ap-navy-2);
+  --c-dark-line: var(--ap-navy-3);
+  --c-on-dark: var(--ap-on-dark);
+  --c-on-dark-2: var(--ap-on-dark-2);
+  --c-on-dark-accent: var(--ap-teal-bright);
+  --c-note: var(--ap-amber-soft);
+  --c-danger: #a1241b;        /* [d] form errors: 7.0:1 on white */
+  --c-ok: #1d6b3a;            /* [d] form confirmation: 6.5:1 on white */
+
+  /* alpha layers (scrims, glass, shadows, rings) */
+  --a-ink-90: rgb(11 26 46 / .9);
+  --a-ink-70: rgb(11 26 46 / .7);
+  --a-ink-55: rgb(11 26 46 / .55);
+  --a-ink-40: rgb(11 26 46 / .4);
+  --a-ink-12: rgb(11 26 46 / .12);
+  --a-ink-08: rgb(11 26 46 / .08);
+  --a-white-80: rgb(255 255 255 / .8);
+  --a-white-16: rgb(255 255 255 / .16);
+  --a-white-10: rgb(255 255 255 / .1);
+  --a-white-06: rgb(255 255 255 / .06);
+  --a-teal-30: rgb(95 212 200 / .3);
+  --a-teal-14: rgb(17 145 139 / .14);
+  --a-amber-30: rgb(242 179 61 / .3);
+  --a-amber-18: rgb(242 179 61 / .18);
+
+  /* ---- type ------------------------------------------------------------------------------------ */
+  --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --font-text: "Atkinson Hyperlegible Next", "Atkinson Hyperlegible", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --fs-hero: clamp(2.5rem, 1.55rem + 3.7vw, 4.6rem);
+  --fs-h1: clamp(2.2rem, 1.6rem + 2.3vw, 3.6rem);
+  --fs-h2: clamp(1.85rem, 1.45rem + 1.6vw, 2.85rem);
+  --fs-h3: clamp(1.15rem, 1.05rem + .35vw, 1.35rem);
+  --fs-h4: 1.0625rem;
+  --fs-lead: clamp(1.08rem, 1rem + .3vw, 1.25rem);
+  --fs-body: 1.0625rem;
+  --fs-small: .9375rem;
+  --fs-xs: .8125rem;
+  --fs-eyebrow: .78rem;
+  --lh-tight: 1.08;
+  --lh-snug: 1.25;
+  --lh-body: 1.65;
+  --tracking-eyebrow: .16em;
+  --tracking-display: -.02em;
+
+  /* ---- space ----------------------------------------------------------------------------------- */
+  --sp-1: .25rem; --sp-2: .5rem; --sp-3: .75rem; --sp-4: 1rem; --sp-5: 1.5rem;
+  --sp-6: 2rem; --sp-7: 3rem; --sp-8: 4rem; --sp-9: 6rem; --sp-10: 8rem;
+  --section-y: clamp(3.5rem, 2.5rem + 4vw, 6.5rem);
+  --gutter: clamp(1rem, .5rem + 2.5vw, 2.5rem);
+  --container: 78rem;
+  --measure: 44rem;
+
+  /* ---- shape ----------------------------------------------------------------------------------- */
+  --r-xs: 6px; --r-sm: 10px; --r-md: 18px; --r-lg: 28px; --r-xl: 40px; --r-pill: 999px;
+  --ring-w: 1px;
+
+  /* ---- depth ----------------------------------------------------------------------------------- */
+  --sh-1: 0 1px 2px var(--a-ink-08), 0 2px 8px var(--a-ink-08);
+  --sh-2: 0 2px 6px var(--a-ink-08), 0 14px 34px var(--a-ink-12);
+  --sh-3: 0 30px 70px -20px var(--a-ink-40);
+
+  /* ---- motion ---------------------------------------------------------------------------------- */
+  --ease-out: cubic-bezier(.22, .8, .24, 1);
+  --ease-in-out: cubic-bezier(.65, 0, .35, 1);
+  --t-fast: .16s;
+  --t-med: .32s;
+  --t-slow: .9s;
+  --focus-blur: 10px;         /* the "coming into focus" reveal starts this soft */
+
+  /* ---- layers ---------------------------------------------------------------------------------- */
+  --z-header: 50; --z-menu: 60; --z-drawer: 90; --z-skip: 100;
+}

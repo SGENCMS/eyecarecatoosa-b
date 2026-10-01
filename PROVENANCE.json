@@ -1,0 +1,695 @@
+{
+  "schema": "site-reforge-local/preview-provenance@1",
+  "note": "This tree is the handoff build in dist/ PLUS the hardening below. It is not the deliverable.",
+  "previewUrl": "https://sgencms.github.io/eyecarecatoosa-b",
+  "realSite": "https://www.eyecarecatoosa.com",
+  "structureModel": "https://eyetrendsclearlake.com",
+  "design": "Aperture — the second redesign of the same site; the first (\"Hillside\") is https://sgencms.github.io/eyecarecatoosa",
+  "changes": {
+    "pages": 158,
+    "robotsMeta": 158,
+    "referrerMeta": 158,
+    "ogUrlRepointed": 158,
+    "ogDescriptionReplaced": 158,
+    "twitterDescriptionReplaced": 156,
+    "ogImageRemoved": 156,
+    "twitterImageRemoved": 156,
+    "ogFeaturedImageRemoved": 3,
+    "jsonLdRemoved": 470,
+    "formsMarkedInert": 301,
+    "practiceFormsNeutralised": 5,
+    "practiceSubmitButtonsDisabled": 5,
+    "jsEnableMarkersRemoved": 5,
+    "formStatusLinesFilled": 5,
+    "formNoticesAdded": 5,
+    "offlineNoticesReplaced": 5,
+    "previewStylesLinked": 158,
+    "mapKeysRemoved": 3,
+    "crlfPagesNormalised": 0,
+    "filesNotShipped": [
+      "llms.txt",
+      "sitemap.xml",
+      "_headers",
+      "_redirects"
+    ]
+  },
+  "verification": {
+    "tool": "src/tools/preview-verify.mjs (handoff project)",
+    "servedAs": "local GitHub Pages emulation under /eyecarecatoosa-b/ (src/tools/preview-serve.mjs)",
+    "verdict": "PASS",
+    "pages": 158,
+    "hardening": {
+      "robotsNoindex": 158,
+      "referrer": 158,
+      "noJsonLd": 158,
+      "noBanner": 158,
+      "previewStyles": 158,
+      "canonicalReal": 158,
+      "ogUrlPreview": 158,
+      "ogDescDisclosure": 158,
+      "noOgImage": 158,
+      "lfOnly": 158,
+      "iframesChecked": 3,
+      "patientFormsNoSubmitControl": 5,
+      "formsTotal": 301,
+      "formsInert": 301,
+      "patientForms": 5,
+      "patientFormsNeutral": 5,
+      "formNotices": 5,
+      "titlePrefixed": 0,
+      "oneH1": 158,
+      "patientFormsNoJsEnable": 5,
+      "patientFormsStatusLine": 5,
+      "socialTitles": 316
+    },
+    "identity": {
+      "identical": 214,
+      "added": [
+        ".gitattributes",
+        ".gitignore",
+        ".nojekyll",
+        "PROVENANCE.json",
+        "PROVENANCE.md",
+        "README.md",
+        "robots.txt",
+        "styles/preview.css"
+      ]
+    },
+    "secrets": {
+      "scanned": 171,
+      "hits": 0,
+      "note": "final tree, docs included; asserted by the post-write re-check"
+    },
+    "binaries": {
+      "scanned": 209,
+      "byKind": {
+        "pdf": 1,
+        "webp": 195,
+        "png": 2,
+        "mp4": 7,
+        "woff2": 4
+      },
+      "metadataProblems": 0,
+      "stringHits": 0,
+      "pdfInfo": {
+        "assets/docs/pricing-detail.pdf": [
+          "Creator=Aspose.Cells",
+          "Producer=Aspose.Cells v21.8; modified using iTextSharp 5.5.12 ©2000-2017 iText Group NV (LegalSimpli; licensed version)"
+        ]
+      },
+      "note": "container metadata checked against an allowlist (src/tools/preview-binscan.mjs); printable strings incl. decompressed streams scanned"
+    },
+    "references": {
+      "checked": 30514,
+      "byKind": {
+        "href": 22539,
+        "src": 2834,
+        "action": 296,
+        "srcset": 4520,
+        "data-loop": 321,
+        "css url()": 4
+      },
+      "escapesRoot": 0,
+      "missing": 0,
+      "rootRelative": 0,
+      "notFoundAbsolute": 172
+    },
+    "pagesNotRebuilt": {
+      "markersSearched": 13,
+      "hits": 0
+    },
+    "render": {
+      "widths": [
+        1440,
+        390
+      ],
+      "pageLoads": 314,
+      "responses400": 0,
+      "brokenImages": 0,
+      "consoleErrors": 0,
+      "outsidePrefix": 0,
+      "overflow390": 0,
+      "bannerShown": 0,
+      "browserCancelled": [],
+      "deep404": [
+        {
+          "path": "no-such-page/",
+          "status": 404,
+          "subresourceFailures": [],
+          "broken": [],
+          "banner": false,
+          "cssRules": 644
+        },
+        {
+          "path": "a/b/c/d/no-such-page",
+          "status": 404,
+          "subresourceFailures": [],
+          "broken": [],
+          "banner": false,
+          "cssRules": 644
+        },
+        {
+          "path": "eye-care-services/nope/",
+          "status": 404,
+          "subresourceFailures": [],
+          "broken": [],
+          "banner": false,
+          "cssRules": 644
+        }
+      ],
+      "search": {
+        "results": 10,
+        "outside": [],
+        "sample": [
+          "/eyecarecatoosa-b/your-eye-health/vision-over-40/dry-eye-after-menopause/",
+          "/eyecarecatoosa-b/eye-care-services/",
+          "/eyecarecatoosa-b/your-eye-health/eye-conditions/"
+        ],
+        "firstResultStatus": 200
+      },
+      "videoLoops": [
+        {
+          "route": "/",
+          "status": 200,
+          "loops": [
+            {
+              "name": "hero",
+              "src": "/eyecarecatoosa-b/assets/video/hero-720.mp4",
+              "ready": 4,
+              "advancing": true,
+              "paused": false,
+              "controls": false,
+              "error": null
+            },
+            {
+              "name": "optical",
+              "src": "/eyecarecatoosa-b/assets/video/optical-720.mp4",
+              "ready": 4,
+              "advancing": true,
+              "paused": false,
+              "controls": false,
+              "error": null
+            },
+            {
+              "name": "bokeh",
+              "src": "/eyecarecatoosa-b/assets/video/bokeh-1080.mp4",
+              "ready": 4,
+              "advancing": true,
+              "paused": false,
+              "controls": false,
+              "error": null
+            }
+          ]
+        },
+        {
+          "route": "your-eye-health/eye-conditions/",
+          "status": 200,
+          "loops": [
+            {
+              "name": "droplet",
+              "src": "/eyecarecatoosa-b/assets/video/droplet-720.mp4",
+              "ready": 4,
+              "advancing": true,
+              "paused": false,
+              "controls": false,
+              "error": null
+            },
+            {
+              "name": "bokeh",
+              "src": "/eyecarecatoosa-b/assets/video/bokeh-1080.mp4",
+              "ready": 4,
+              "advancing": true,
+              "paused": false,
+              "controls": false,
+              "error": null
+            }
+          ]
+        },
+        {
+          "route": "a/b/c/no-such-loop-page",
+          "status": 404,
+          "loops": [
+            {
+              "name": "bokeh",
+              "src": "/eyecarecatoosa-b/assets/video/bokeh-1080.mp4",
+              "ready": 4,
+              "advancing": true,
+              "paused": false,
+              "controls": false,
+              "error": null
+            }
+          ]
+        }
+      ],
+      "practiceFormsJsOn": [
+        {
+          "route": "contact-us/appointment-request-form/",
+          "prevented": true,
+          "stayed": true,
+          "action": "",
+          "notice": true,
+          "disabledButtons": 1,
+          "stillDisabledAfterScripts": true,
+          "hoverTest": {
+            "idle": {
+              "hover": false,
+              "bg": "rgb(242, 179, 61)",
+              "bd": "rgb(242, 179, 61)",
+              "arrow": "none"
+            },
+            "hovered": {
+              "hover": true,
+              "bg": "rgb(242, 179, 61)",
+              "bd": "rgb(242, 179, 61)",
+              "arrow": "none"
+            }
+          },
+          "requestsAfterSubmit": []
+        },
+        {
+          "route": "contact-us/patient-registration-form/",
+          "prevented": true,
+          "stayed": true,
+          "action": "",
+          "notice": true,
+          "disabledButtons": 1,
+          "stillDisabledAfterScripts": true,
+          "hoverTest": {
+            "idle": {
+              "hover": false,
+              "bg": "rgb(242, 179, 61)",
+              "bd": "rgb(242, 179, 61)",
+              "arrow": "none"
+            },
+            "hovered": {
+              "hover": true,
+              "bg": "rgb(242, 179, 61)",
+              "bd": "rgb(242, 179, 61)",
+              "arrow": "none"
+            }
+          },
+          "requestsAfterSubmit": []
+        }
+      ],
+      "practiceFormsJsOff": [
+        {
+          "route": "contact-us/appointment-request-form/",
+          "negative": {
+            "enterAndClickRequests": 0,
+            "enter": {
+              "requests": [],
+              "stayed": true
+            },
+            "click": {
+              "requests": [],
+              "stayed": true,
+              "clickHitButton": true
+            }
+          },
+          "control": {
+            "requestsCaught": [
+              "POST /eyecarecatoosa-b/contact-us/appointment-request-form/"
+            ],
+            "clickHitButton": true
+          }
+        },
+        {
+          "route": "contact-us/patient-registration-form/",
+          "negative": {
+            "enterAndClickRequests": 0,
+            "enter": {
+              "requests": [],
+              "stayed": true
+            },
+            "click": {
+              "requests": [],
+              "stayed": true,
+              "clickHitButton": true
+            }
+          },
+          "control": {
+            "requestsCaught": [
+              "POST /eyecarecatoosa-b/contact-us/patient-registration-form/"
+            ],
+            "clickHitButton": true
+          }
+        }
+      ]
+    },
+    "generatedMedia": {
+      "stills": [
+        {
+          "id": "bokeh",
+          "provider": "higgsfield",
+          "model": "higgsfield-ai/soul/v2/standard",
+          "edit": null
+        },
+        {
+          "id": "computer-clean",
+          "provider": "fal",
+          "model": "fal-ai/nano-banana-pro",
+          "edit": {
+            "tool": "harmonic inpaint",
+            "what": "a logo-like emblem on the closed laptop lid",
+            "box": {
+              "x": 1128,
+              "y": 811,
+              "w": 232,
+              "h": 94
+            },
+            "regions": [
+              "1203,811 1297,811 1302,850 1305,905 1270,905 1265,891 1210,891 1198,868",
+              "1128,826 1174,826 1174,870 1128,870",
+              "1329,830 1360,830 1360,868 1329,868"
+            ],
+            "command": "node src/tools/inpaint.mjs --src assets/generated/computer.png --out assets/generated/computer-clean.png --box 1100,780,290,160 --grow 2 --close 0 --hole-max 0 --bright-s 0.75 --glint-l 125 --glint-s 0.47 --region 1203,811 1297,811 1302,850 1305,905 1270,905 1265,891 1210,891 1198,868 --region 1128,826 1174,826 1174,870 1128,870 --region 1329,830 1360,830 1360,868 1329,868",
+            "filledPixels": 12879
+          }
+        },
+        {
+          "id": "contacts",
+          "provider": "fal",
+          "model": "fal-ai/nano-banana-pro",
+          "edit": null
+        },
+        {
+          "id": "eye-model",
+          "provider": "fal",
+          "model": "fal-ai/nano-banana-pro",
+          "edit": null
+        },
+        {
+          "id": "frames-display",
+          "provider": "fal",
+          "model": "fal-ai/nano-banana-pro",
+          "edit": null
+        },
+        {
+          "id": "frames-flatlay",
+          "provider": "fal",
+          "model": "fal-ai/nano-banana-pro",
+          "edit": null
+        },
+        {
+          "id": "glossary",
+          "provider": "fal",
+          "model": "fal-ai/nano-banana-pro",
+          "edit": null
+        },
+        {
+          "id": "healthy-sight",
+          "provider": "fal",
+          "model": "fal-ai/nano-banana-pro",
+          "edit": null
+        },
+        {
+          "id": "hero-glasses",
+          "provider": "fal",
+          "model": "fal-ai/nano-banana-pro",
+          "edit": null
+        },
+        {
+          "id": "insurance-forms",
+          "provider": "fal",
+          "model": "fal-ai/nano-banana-pro",
+          "edit": null
+        },
+        {
+          "id": "kids-band",
+          "provider": "fal",
+          "model": "fal-ai/nano-banana-pro",
+          "edit": null
+        },
+        {
+          "id": "lens-treatments",
+          "provider": "fal",
+          "model": "fal-ai/nano-banana-pro",
+          "edit": null
+        },
+        {
+          "id": "library",
+          "provider": "higgsfield",
+          "model": "xai/grok-imagine-image-2.0",
+          "edit": null
+        },
+        {
+          "id": "photochromic",
+          "provider": "fal",
+          "model": "fal-ai/nano-banana-pro",
+          "edit": null
+        },
+        {
+          "id": "photochromic-2",
+          "provider": "higgsfield",
+          "model": "xai/grok-imagine-image-2.0",
+          "edit": null
+        },
+        {
+          "id": "protect",
+          "provider": "higgsfield",
+          "model": "xai/grok-imagine-image-2.0",
+          "edit": null
+        },
+        {
+          "id": "specialty-clean",
+          "provider": "fal",
+          "model": "fal-ai/nano-banana-pro",
+          "edit": {
+            "tool": "ffmpeg delogo",
+            "box": {
+              "x": 258,
+              "y": 1004,
+              "w": 70,
+              "h": 52
+            }
+          }
+        },
+        {
+          "id": "sunglasses",
+          "provider": "fal",
+          "model": "fal-ai/nano-banana-pro",
+          "edit": null
+        },
+        {
+          "id": "surgery",
+          "provider": "fal",
+          "model": "fal-ai/nano-banana-pro",
+          "edit": null
+        },
+        {
+          "id": "svc-astig",
+          "provider": "fal",
+          "model": "fal-ai/nano-banana-pro",
+          "edit": null
+        },
+        {
+          "id": "svc-disease",
+          "provider": "fal",
+          "model": "fal-ai/nano-banana-pro",
+          "edit": null
+        },
+        {
+          "id": "svc-dryeye",
+          "provider": "fal",
+          "model": "fal-ai/nano-banana-pro",
+          "edit": null
+        },
+        {
+          "id": "svc-emergency",
+          "provider": "fal",
+          "model": "fal-ai/nano-banana-pro",
+          "edit": null
+        },
+        {
+          "id": "svc-exams",
+          "provider": "fal",
+          "model": "fal-ai/nano-banana-pro",
+          "edit": null
+        },
+        {
+          "id": "svc-kids",
+          "provider": "fal",
+          "model": "fal-ai/nano-banana-pro",
+          "edit": null
+        },
+        {
+          "id": "svc-presby",
+          "provider": "fal",
+          "model": "fal-ai/nano-banana-pro",
+          "edit": null
+        },
+        {
+          "id": "svc-tech",
+          "provider": "fal",
+          "model": "fal-ai/nano-banana-pro",
+          "edit": null
+        },
+        {
+          "id": "vision-60",
+          "provider": "higgsfield",
+          "model": "xai/grok-imagine-image-2.0",
+          "edit": null
+        }
+      ],
+      "loops": [
+        {
+          "id": "bokeh",
+          "from": "bokeh",
+          "provider": "fal",
+          "model": "blackforestlabs/flux-3/first-last-frame-to-video",
+          "mode": "straight",
+          "renditions": [
+            "bokeh-1080.mp4",
+            "bokeh-720.mp4"
+          ]
+        },
+        {
+          "id": "droplet",
+          "from": "svc-dryeye",
+          "provider": "higgsfield",
+          "model": "minimax/hailuo-2.3/standard/image-to-video",
+          "mode": "pingpong",
+          "renditions": [
+            "droplet-720.mp4"
+          ]
+        },
+        {
+          "id": "hero",
+          "from": "hero-glasses",
+          "provider": "higgsfield",
+          "model": "kling-video/v2.5-turbo/pro/image-to-video",
+          "mode": "pingpong",
+          "renditions": [
+            "hero-1080.mp4",
+            "hero-720.mp4"
+          ]
+        },
+        {
+          "id": "optical",
+          "from": "frames-display",
+          "provider": "higgsfield",
+          "model": "kling-video/v2.5-turbo/pro/image-to-video",
+          "mode": "pingpong",
+          "renditions": [
+            "optical-1080.mp4",
+            "optical-720.mp4"
+          ]
+        }
+      ],
+      "placements": 1886,
+      "pagesShowingGenerated": 158,
+      "note": "AI-generated decorative imagery; not photographs of the practice, its people or its premises"
+    },
+    "mapPinCheck": {
+      "tree": "eyecarecatoosa-b",
+      "checkedAt": "2026-09-30T23:55:13.978Z",
+      "method": "each embed framed at 660x440 by a blank no-referrer page in headless Chrome, screenshots compared side by side",
+      "keyed": {
+        "url": "https://www.google.com/maps/embed/v1/place?key=REDACTED&q=place_id:ChIJu4hkSgj1tocRP-58_b_qUuk",
+        "screenshot": "audit/preview/pin-keyed.png",
+        "sha256": "b404434879622323415de2eabdc52afcf6bd554cde1bbb671ce03b528ddf145d"
+      },
+      "keyless": {
+        "url": "https://maps.google.com/maps?q=Eyecare%20of%20Catoosa%20Hills%2C%20650%20S.%20Cherokee%20St.%2C%20Suite%20A%2C%20Catoosa%2C%20OK%2074015&output=embed",
+        "screenshot": "audit/preview/pin-keyless.png",
+        "sha256": "30f7761aacadb759f20eaa8ba689971640611068f3e7a20058a78a8db004fb0b"
+      },
+      "pinLabel": "Eyecare of Catoosa",
+      "samePlace": true,
+      "judgedBy": "both screenshots viewed side by side: the same red pin labelled \"Eyecare of Catoosa\" at the same spot, the same place card (650 S Cherokee St Ste A, Catoosa, OK 74015)",
+      "identicalScreenshots": false
+    },
+    "thirdPartyFrames": {
+      "inMarkup": {
+        "maps.google.com": [
+          "/hours-location/",
+          "/",
+          "/location/practice-location-1/"
+        ]
+      },
+      "measuredHosts": {
+        "maps.google.com": {
+          "requests": 6,
+          "methods": {
+            "GET": 6
+          },
+          "pages": [
+            "hours-location/",
+            "",
+            "location/practice-location-1/"
+          ]
+        },
+        "www.google.com": {
+          "requests": 63,
+          "methods": {
+            "GET": 63
+          },
+          "pages": [
+            "hours-location/",
+            "",
+            "location/practice-location-1/"
+          ]
+        },
+        "maps.gstatic.com": {
+          "requests": 12,
+          "methods": {
+            "GET": 12
+          },
+          "pages": [
+            "hours-location/",
+            "",
+            "location/practice-location-1/"
+          ]
+        },
+        "maps.googleapis.com": {
+          "requests": 108,
+          "methods": {
+            "GET": 87,
+            "POST": 18,
+            "OPTIONS": 3
+          },
+          "pages": [
+            "hours-location/",
+            "",
+            "location/practice-location-1/"
+          ]
+        },
+        "fonts.googleapis.com": {
+          "requests": 12,
+          "methods": {
+            "GET": 12
+          },
+          "pages": [
+            "hours-location/",
+            "",
+            "location/practice-location-1/"
+          ]
+        },
+        "fonts.gstatic.com": {
+          "requests": 12,
+          "methods": {
+            "GET": 12
+          },
+          "pages": [
+            "hours-location/",
+            "",
+            "location/practice-location-1/"
+          ]
+        },
+        "places.googleapis.com": {
+          "requests": 4,
+          "methods": {
+            "POST": 3,
+            "OPTIONS": 1
+          },
+          "pages": [
+            "hours-location/",
+            "",
+            "location/practice-location-1/"
+          ]
+        }
+      },
+      "note": "measured by preview-verify.mjs with every child target auto-attached; request counts are over the measured page loads"
+    }
+  }
+}
